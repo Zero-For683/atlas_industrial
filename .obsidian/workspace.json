@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Mission Statement and Roles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Mission Statement and Roles"
             }
           }
         ]
@@ -118,12 +118,12 @@
   },
   "active": "307fb18316ed31b1",
   "lastOpenFiles": [
+    "README.md",
+    "Mission Statement and Roles.md",
     "Untitled 3.md",
     "Untitled 2.md",
     "Untitled 1.md",
-    "Untitled.md",
     "Welcome.md",
-    "README.md",
     "Untitled 4.md"
   ]
 }
