@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4d0b98c8c9873f47",
+            "id": "307fb18316ed31b1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -81,85 +85,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e4437255b9c455eb",
+        "id": "b6476e6b95216a3e",
         "type": "tabs",
         "children": [
           {
-            "id": "a95d4cbfd2ef4cfc",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
-            }
-          },
-          {
-            "id": "943b3993c6c57527",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
-          {
-            "id": "80471a0e16947d2f",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "2cac9b54ca3a1a5d",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "f50abf38b3ae681f",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
-          {
-            "id": "d5d0263da129377b",
+            "id": "8ee07dd142ed55fd",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -168,8 +98,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -187,8 +116,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4d0b98c8c9873f47",
+  "active": "307fb18316ed31b1",
   "lastOpenFiles": [
-    "Welcome.md"
+    "Untitled 3.md",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Welcome.md",
+    "README.md",
+    "Untitled 4.md"
   ]
 }
