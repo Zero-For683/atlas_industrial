@@ -48,9 +48,21 @@
               "icon": "lucide-file",
               "title": "Testme"
             }
+          },
+          {
+            "id": "ae942f998472fc63",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Company Identity.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Company Identity"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -223,10 +235,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b47b1a41206be2ed",
+  "active": "ae942f998472fc63",
   "lastOpenFiles": [
-    "README.md",
     "Testme.md",
+    "Excalidraw/Company Identity.md",
+    "Excalidraw",
+    "README.md",
     "Chris Test.md",
     "Mission Statement and Roles.md",
     "Untitled 3.md",
