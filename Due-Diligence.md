@@ -12,21 +12,21 @@ Seems like we need an ERP to solve most of our problems. Below are a list of som
 - `Dolibarr` - https://www.dolibarr.org/downloads.php
 
 
-2. A **SIEM solution** for monitoring and logging.
+# A **SIEM solution** for monitoring and logging.
 
 - `Splunk`
 - `Wazuh`
 - `Security Onion`
 - `Elk Stack` (elasticsearch / logstash / kibana)
 
-3. A **database solution** to support the SIEM or critical application.
+# A **database solution** to support the SIEM or critical application.
 
 - `PostgreSQL`
 - `MySQL`
 - `MariaDB`
 - `SQLite`
 
-2. An **endpoint platform** (Windows/Linux) to represent the user environment.
+# An **endpoint platform** (Windows/Linux) to represent the user environment.
 
 ```ad-important
 ***We'll have to decide what OS's to put on what machine.*** 
