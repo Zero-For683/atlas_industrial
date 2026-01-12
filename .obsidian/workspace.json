@@ -53,12 +53,14 @@
             "id": "ae942f998472fc63",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Company Identity.md"
+                "file": "Chris Test.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Company Identity"
+              "icon": "lucide-file",
+              "title": "Chris Test"
             }
           }
         ],
@@ -237,12 +239,12 @@
   },
   "active": "ae942f998472fc63",
   "lastOpenFiles": [
-    "Testme.md",
+    "Mission Statement and Roles.md",
     "Excalidraw/Company Identity.md",
+    "Testme.md",
     "Excalidraw",
     "README.md",
     "Chris Test.md",
-    "Mission Statement and Roles.md",
     "Untitled 3.md",
     "Untitled 2.md",
     "Untitled 1.md",
