@@ -8,7 +8,7 @@ Seems like we need an ERP to solve most of our problems. Below are a list of som
 ```
 
 - `Axelor` - https://axelor.com/installation-guide/
-- `Tryton` - https://www.tryton.org/download
+- `Tryton` - https://www.tryton.org/download >>>
 - `Dolibarr` - https://www.dolibarr.org/downloads.php
 
 
