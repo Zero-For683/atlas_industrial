@@ -43,3 +43,4 @@ Seems like we need an ERP to solve most of our problems. Below are a list of som
 | PostgreSQL       | Windows 11 Server      |
 | SIEM             | Linux (distro?)        |
 | Tryton           | Linux Ubuntu 24.04 LTS |
+|                  |                        |
