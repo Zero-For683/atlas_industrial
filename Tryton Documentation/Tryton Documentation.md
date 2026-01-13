@@ -81,4 +81,4 @@ This confirms Tryton is a viable and stable business application for Atlas Indus
     
     - Tryton may not fully integrate with outdated (legacy) systems, creating data inconsistency risks.
 
-![[Docker Command.jpg]]
+![[Tryton Command.jpg]]
