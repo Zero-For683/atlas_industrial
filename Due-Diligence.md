@@ -37,5 +37,5 @@ For the 2 linux machines, we'll need to decide what distro to put on each
 
 ---
 
-For the Windows machines, we're stuck with W10, but we can decide which one will be the server or the client. The other one will be W11 (I'm assuming).
+For the Windows machines, we're stuck with W10, but we can decide which one will be the server or the client. The other one will be W11.
 ```
