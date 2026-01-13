@@ -13,7 +13,7 @@ Seems like we need an ERP to solve most of our problems. Below are a list of som
 # A **SIEM solution** for monitoring and logging.
 
 - `Splunk`
-- `Wazuh` <<< We should research this as our primary option
+- `Wazuh` 
 - `Security Onion`
 - `Elk Stack` (elasticsearch / logstash / kibana)
 
@@ -32,8 +32,8 @@ Seems like we need an ERP to solve most of our problems. Below are a list of som
 
 > [!summary] For the web application, Ubuntu is the obvious choice. Ubuntu minimizes operational friction, it's easy to setup & build solutions, as well as hardening. Tryton will be used for it's extensive documentation, and clear support in every aspect of our CoG and our mission statement. It supports financing, billing, shipping, and much more. Additionally we can install plugins to further add whatever we may need in the future.
 
-| User Environment | Windows 11 Pro         |
+| User Environment | Windows 10 Pro         |
 | ---------------- | ---------------------- |
-| PostgreSQL       | Linux RedHat           |
-| SIEM             | Windows 10 Pro/Server  |
+| PostgreSQL       | Windows 11 Server      |
+| SIEM             | Linux (distro?)        |
 | Tryton           | Linux Ubuntu 24.04 LTS |
