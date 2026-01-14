@@ -13,3 +13,7 @@ The organization's operational capability depends on several interconnected syst
 - **Wazuh SIEM/Ubuntu:** Collects security logs and provides visibility into threats.
 - **Active Directory/Kerberos:** Controls authentication and authorization across the database.
 - **Windows 10 User Workstation:** Entry point with little to no support, becomes an easy target for phishing and credential theft attacks. 
+
+# Vulnerability Capability Overlap
+The Venn diagram analysis shows a critical problem: several critical requirements (CR) fall within the critical vulnerability (CV) area, which means essential business functions become exposed to threats.
+- **Inventory Management:** The Tryton ERP system is vulnerable to web attacks. 
