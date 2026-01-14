@@ -17,11 +17,11 @@ The full form of “STRIDE” in the context of security is a mnemonic represent
  
    
 
-|                                                                                                                                                           |              |               |                 |                            |                       |                            |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------- | --------------- | -------------------------- | --------------------- | -------------------------- |
-| **Scenario**                                                                                                                                              | **Spoofing** | **Tampering** | **Repudiation** | **Information Disclosure** | **Denial of Service** | **Elevation of Privilege** |
-| **Sending a spoofed email, wherein the mail gateway lacks email security and logging configuration.**                                                     | ✔            |               | ✔               |                            |                       |                            |
-| **Flooding a web server with many requests that lack load-balancing capabilities.**                                                                       |              |               |                 |                            | ✔                     |                            |
-| **Abusing an SQL injection vulnerability.**                                                                                                               |              | ✔             |                 | ✔                          |                       |                            |
-| **Accessing public cloud storage (such as AWS S3 bucket or Azure blob) that handles customer data**.                                                      |              |               |                 | ✔                          |                       |                            |
-| **Exploiting a local privilege escalation vulnerability due to the lack of system updates and modifying system configuration for a persistent backdoor.** |              | ✔             |                 |                            |                       | ✔                          |
+|                                                          |              |               |                 |                            |                       |                            |
+| -------------------------------------------------------- | ------------ | ------------- | --------------- | -------------------------- | --------------------- | -------------------------- |
+| **Scenario**                                             | **Spoofing** | **Tampering** | **Repudiation** | **Information Disclosure** | **Denial of Service** | **Elevation of Privilege** |
+| **Web Application Attack Surface (Tryton).**             | ✔            | ✔             | ✔               |                            |                       | ✔                          |
+| **Database Service Exposure.**                           |              | ✔             |                 |                            | ✔                     |                            |
+| **Misconfiguration Risks (Docker, SIEM, Database, ERP)** |              | ✔             |                 | ✔                          | ✔                     |                            |
+| **Certificate Misconfiguration (Wazuh)a**.               |              |               |                 | ✔                          | ✔                     | ✔                          |
+| **User Endpoint Vulnerability (Windows 10 Workstation)** | ✔            | ✔             |                 | ✔                          |                       | ✔                          |

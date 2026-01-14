@@ -19,8 +19,13 @@ The full form of “STRIDE” in the context of security is a mnemonic represent
 |                                |              |               |                 |                            |                       |                            |
 | ------------------------------ | ------------ | ------------- | --------------- | -------------------------- | --------------------- | -------------------------- |
 | **Scenario**                   | **Spoofing** | **Tampering** | **Repudiation** | **Information Disclosure** | **Denial of Service** | **Elevation of Privilege** |
+<<<<<<< HEAD
 | **web application attack.**    | X            | X             |                 | X                          | X                     |                            |
 | **Database Service Exposure.** |              | X             | X               | X                          |                       |                            |
 |                                |              |               |                 |                            |                       |                            |
 |                                |              |               |                 |                            |                       |                            |
 |                                |              |               |                 |                            |                       |                            |
+=======
+| **web application attack.**    |              | X             |                 | X                          | X                     |                            |
+| **Database Service Exposure.** |              | X             | X               | X                          |                       |                            |
+>>>>>>> origin/main
