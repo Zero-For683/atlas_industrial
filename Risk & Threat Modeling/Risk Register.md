@@ -31,3 +31,21 @@ PostgreSQL Documentation
 |==**CIA Impact**==|==**Confidentiality: High**, **Integrity: High**, **Availability: Medium**==|
 |**Risk Level**|**High**|
 |**Mitigation**|Firewall rules, network segmentation, disable remote access, enable TLS, strong passwords, change default port|
+## **3. Misconfiguration Risks (Docker, SIEM, Database, ERP)**
+
+**System:** Entire environment (Tryton, PostgreSQL, Wazuh)  
+**Source:** Both Tryton & PostgreSQL docs warn that Docker misconfiguration can expose services.
+
+PostgreSQL Documentation
+
+Tryton Documentation
+
+|Item|Details|
+|---|---|
+|**Threat**|Accidental misconfiguration that exposes ports, credentials, or debug services|
+|**Vulnerability**|Weak .env file permissions, exposed Docker ports, default creds|
+|**Likelihood**|**Medium**|
+|**Impact**|**High** — system-wide compromise possible|
+|**CIA Impact**|**C: High**, **I: High**, **A: Medium**|
+|**Risk Level**|**High**|
+|**Mitigation**|Enforce .env file permissions, disable default Docker networks, validate compose files, use hardened images, perform CIS Docker benchmarks|
