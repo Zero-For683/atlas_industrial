@@ -12,7 +12,7 @@ As an endpoint and cloud workload protector wazuh as bridged the gap with wants 
 ```
 
 ```ad-info
-Wazuh provides the following features
+Wazuh provides the following features- The 'Why'
 
 - **Endpoint Security**
 Configuration Assessment
@@ -47,3 +47,12 @@ Wazuh is an **open-source** platform for threat detection and incident response,
 Users benefit from the flexibility to modify the source code, tailoring Wazuh to their specific security needs. Furthermore, Wazuh's compatibility with third-party APIs and solutions like VirusTotal, TheHive, and PagerDuty enriches its functionality, allowing it to serve as both a source and receiver of security data. This blend of collaborative development, customization, and robust integration options positions Wazuh as a versatile tool in the cybersecurity landscape.
 ```
 
+
+```ad-danger
+### 1. Clustering, Load Balancing, and High-Availability Challenges
+
+The core design complicates scenarios where redundancy and scalability are required.
+
+
+
+```

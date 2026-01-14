@@ -16,3 +16,15 @@ The full form of “STRIDE” in the context of security is a mnemonic represent
 ```
  
    
+| **Scenario**                                              | **Spoofing** | **Tampering** | **Repudiation** | **Information Disclosure** | **Denial of Service** | **Elevation of Privilege** |
+<<<<<<< HEAD
+| **web application attack.**                               |              | X             |                 | X                          | X                     |                            |
+=======
+| --------------------------------------------------------- | ------------ | ------------- | --------------- | -------------------------- | --------------------- | -------------------------- |
+| **web application atttack.**                              |              | X             |                 | X                          | X                     |                            |
+>>>>>>> origin/main
+| **Database Service Exposure.**                            |              | X             | X               | X                          |                       |                            |
+| **Misconfiguration Risks (Docker, SIEM, Database, ERP)**  | X            | X             | X               | X                          | X                     |                            |
+| **Certificate Misconfiguration (Wazuh)**.                 |              | X             | X               | X                          | X                     | X                          |
+| **User Endpoint Vulnerability (Windows 10 Workstation).** | X            | X             |                 | X                          |                       | X                          |
+dfdf
