@@ -1,7 +1,7 @@
 **Atlas Industrial LLC – Risk Register (Stage 3: Risk & Threat Modeling)**
-## **1. Web Application Attack Surface (Tryton ERP)**
+## **1. Web Application Attack Surface (Tryton)**
 
-**System:** Tryton ERP  
+**System:** Tryton  
 **Source:** Tryton documentation cites brute-force login, SQL injection, and XSS as primary risks for browser-based ERP systems.
 
 Tryton Documentation
