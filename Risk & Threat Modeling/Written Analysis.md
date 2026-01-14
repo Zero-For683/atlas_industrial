@@ -5,3 +5,7 @@
 # Threat Landscape Overview
 - **External Threats:** Financially motivated cybercriminals targeting customer data and payment information, opportunistic attackers exploiting public facing web services like our Tryton ERP system, and potential supply chain attackers that want to disrupt Atlas's technology manufacturing and distribution operations. 
 - I**Internal Threats:**  Malicious insiders with privileged access to sensitive systems (data center, legal team, auditors), employees susceptible to common but neglected attacks such as phishing, social engineering, and potential policy violations or log tampering that could make malicious activity go unseen.
+
+# Critical Systems at Risk
+The organization's operational capability depends on several interconnected systems identified in the threat model. 
+- **Tryton ERP System (Ubuntu):** Manages Inventory, production workflows
