@@ -48,3 +48,11 @@ Users benefit from the flexibility to modify the source code, tailoring Wazuh to
 ```
 
 
+```ad-danger
+### 1. Clustering, Load Balancing, and High-Availability Challenges
+
+The core design complicates scenarios where redundancy and scalability are required.
+
+
+
+```
