@@ -10,3 +10,6 @@
 The organization's operational capability depends on several interconnected systems identified in the threat model. 
 - **Tryton ERP System (Ubuntu):** Manages Inventory, production workflows, customer orders, and business data.
 - **PostgreSQL Database (TCP 5432):** Stores customer data, financial records, and ERP information.
+- **Wazuh SIEM/Ubuntu:** Collects security logs and provides visibility into threats.
+- **Active Directory/Kerberos:** Controls authentication and authorization across the database.
+- **Windows 10 User Workstation:** Entry point with little to no support, becomes an easy target for phishing and credential theft attacks. 
