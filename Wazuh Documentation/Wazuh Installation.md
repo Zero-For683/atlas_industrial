@@ -3,15 +3,16 @@
 > [!important] For our purposes, its important we build using the `docker-compose.yml` for easy to keep and upgrade
 
 
-1. Clone the repo
+# Clone the repo
 
 `git clone https://github.com/wazuh/wazuh-docker`
 
-We will be using their single-node solution
+We will be using their single-node deployment
 
-Once cloned, `cd` into `wazuh-docker/single-node`
+Change into the single-node directory:
+`cd wazuh-docker/single-node`
 
-From here, we need to upgrade the system, so run the following:
+# Update to the latest stable version
 
 ```
 docker compose down
@@ -23,28 +24,70 @@ docker compose up -d
 Then take it back down with `docker compose down -v`
 
 
-2. Building certs
+# Creating certs
 
-Next we need to build out certificates for `https`. 
+`Wazuh` requires HTTPS certificates for the dashboard and indexer.
 
 https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/certificates.html
 
-Copy the `.yml` file, and replace the `- name:` and `ip: <indexer-node-ip>` with the images in the `docker-compose.yml` file (path is: `wazuh-docker/single-node/docker-compose.yml`) inside the `wazuh-docker/single-node/config` directory. 
+
+Place the following `config.yml` file in the following directory: `wazuh-docker/single-node/config/config.yml`
+```config.yml
+nodes:
+  # Wazuh indexer nodes
+  indexer:
+    - name: node-1
+      ip: "<indexer-node-ip>"
+    #- name: node-2
+    #  ip: "<indexer-node-ip>"
+    #- name: node-3
+    #  ip: "<indexer-node-ip>"
+
+  # Wazuh server nodes
+  # If there is more than one Wazuh server
+  # node, each one must have a node_type
+  server:
+    - name: wazuh-1
+      ip: "<wazuh-manager-ip>"
+    #  node_type: master
+    #- name: wazuh-2
+    #  ip: "<wazuh-manager-ip>"
+    #  node_type: worker
+    #- name: wazuh-3
+    #  ip: "<wazuh-manager-ip>"
+    #  node_type: worker
+
+  # Wazuh dashboard nodes
+  dashboard:
+    - name: dashboard
+      ip: "<dashboard-node-ip>"
+```
+
+Replace `- name:` and `ip: <indexer-node-ip>` with the images in the `docker-compose.yml` file (path is: `wazuh-docker/single-node/docker-compose.yml`). 
+
+ 
 
 ![[Pasted image 20260113224855.png]]
 
-For example, in the picture, the name AND hostname are `wazuh.dashboard`, so we fill in `config.yml`'s name and IP with `wazuh.dashboard` appropriately. 
+```ad-example
+For example, in the picture, the name AND hostname are `wazuh.dashboard`, so in `config.yml` under each section we'd fill it in as so:
 
+`dashboard:`
+`    - name: wazuh.dashboard`
+`    ip: "wazuh.dashboard"` 
+```
 
-Then, we need to download the certificate script from here: 
+---
+
+Once the `config.yml` file is properly filled in, we need to download the script that generates the certs here, and place it in the same directory as the `config.yml` file:
 https://packages.wazuh.com/4.14/wazuh-certs-tool.sh
 
 Make it executable, and run it as so:
 
 `bash wazuh-certs-tool.sh -A`
 
-
-3. Copying the certificates into the necessary directories
+This will place all of the certificates in the directory: `wazuh-docker/single-node/config/wazuh-certificates/*`
+# Copying the certificates into the necessary directories
 
 
 Now, we need to copy all of the `.pem` files into the two following directories:
@@ -56,9 +99,9 @@ Now, we need to copy all of the `.pem` files into the two following directories:
 ```
 
 
-4. Restarting / managing
+# Troubleshooting
 
-For good measure, run:
+If the dashboard does not come up in the browser automatically, or there are errors, troubleshoot via restarting
 
 ```
 docker compose down -v
