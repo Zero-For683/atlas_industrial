@@ -79,4 +79,4 @@ This confirms PostgreSQL is a viable and stable business application for Atlas I
 Changes made from default configurations:
 - Enabled logging via .conf files 
 - Ensured the encryptions are conducted with scram-sha-256
-- 
+- Created inbound rule for the port PostgreSQL will be utilizing
