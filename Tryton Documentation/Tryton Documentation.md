@@ -51,7 +51,7 @@ During testing, `Tryton` was deployed successfully on Ubuntu 24.04 using Docker.
 
 - `Tryton` container launched and communicated with the DB
 - Web interface reachable externally
-- Database creation and login functional(TBD)
+- Database creation and login functional
 - ERP modules load correctly(TBD)
 
 This confirms `Tryton` is a viable and stable business application for Atlas Industrial’s operational environment.
@@ -75,5 +75,7 @@ This confirms `Tryton` is a viable and stable business application for Atlas Ind
 
 ### 4. Legacy Integration Challenges
 - `Tryton` may not fully integrate with outdated (legacy) systems, creating data inconsistency risks.
+
+![[Tryton GUI.jpg]]
 
 ![[Tryton Command.jpg]]
