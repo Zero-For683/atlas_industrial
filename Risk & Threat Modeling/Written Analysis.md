@@ -1,1 +1,7 @@
 
+# Executive Summary
+- Atlas Industrial LLC operates as an online manufacturer and distributor of high-quality computer components, with a mission to provide reliable, efficient technology solutions to businesses and consumers. The organization's Center of Gravity as identified in the organizational analysis is "operational reliability that sustains customer trust." This means that any disruption to system availability, data integrity, or confidentiality directly threatens the core value proposition that keeps customers choosing Atlas Industrial over competitors.
+
+# Threat Landscape Overview
+- **External Threats:** Financially motivated cybercriminals targeting customer data and payment information, opportunistic attackers exploiting public facing web services like our Tryton ERP system, and potential supply chain attackers that want to disrupt Atlas's technology manufacturing and distribution operations. 
+- I**Internal Threats:**  Malicious insiders with privileged access to sensitive systems (data center, legal team, auditors), employees susceptible to common but neglected attacks such as phishing, social engineering, and potential policy violations or log tampering that could make malicious activity go unseen.
