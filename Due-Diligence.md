@@ -35,6 +35,6 @@ Seems like we need an ERP to solve most of our problems. Below are a list of som
 | User Environment | Windows 10 Pro         |
 | ---------------- | ---------------------- |
 | PostgreSQL       | Windows 11 Server      |
-| SIEM             | Linux (distro?)        |
+| SIEM             | Linux Ubuntu 22.04 LTS |
 | Tryton           | Linux Ubuntu 24.04 LTS |
 |                  |                        |
