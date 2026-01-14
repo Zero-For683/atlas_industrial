@@ -22,10 +22,10 @@
 
 > [!summary] For the web application, Ubuntu is the obvious choice. Ubuntu minimizes operational friction, it's easy to setup & build solutions, as well as hardening. Tryton will be used for it's extensive documentation, and clear support in every aspect of our CoG and our mission statement. It supports financing, billing, shipping, and much more. Additionally we can install plugins to further add whatever we may need in the future.
 
-| App endpoint     | Host OS                |
-| ---------------- | ---------------------- |
-| PostgreSQL       | Windows 11 Server (AD) |
-| Wazuh            | Ubuntu 22.04 LTS       |
-| Tryton           | Ubuntu 22.04 LTS       |
-| User Environment | Windows 10 Pro         |
+| App endpoint     | Host OS                              |
+| ---------------- | ------------------------------------ |
+| PostgreSQL       | Windows Server 2025                  |
+| Wazuh            | Ubuntu 22.04 Server image (headless) |
+| Tryton           | Ubuntu 22.04 Server image (headless) |
+| User Environment | Windows 10 Pro                       |
 

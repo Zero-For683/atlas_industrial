@@ -8,4 +8,5 @@
 
 # Critical Systems at Risk
 The organization's operational capability depends on several interconnected systems identified in the threat model. 
-- **Tryton ERP System (Ubuntu):** Manages Inventory, production workflows
+- **Tryton ERP System (Ubuntu):** Manages Inventory, production workflows, customer orders, and business data.
+- **PostgreSQL Database (TCP 5432):** Stores customer data, financial records, and ERP information.
