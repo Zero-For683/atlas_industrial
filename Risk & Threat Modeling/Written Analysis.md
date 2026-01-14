@@ -23,15 +23,19 @@ The Venn diagram analysis shows a critical problem: several critical requirement
 - **Data Center:** Houses all critical infrastructure (Tryton, PostgreSQL, Wazuh, Active Directory, Kerberos). Insider threats and privileged access vulnerabilities could enable system wide compromise.
  Atlas Industrial's most critical business functions are exposed to its most significant vulnerabilities. Protecting the inventory system, employee authentication, database integrity, and data center security is not just an IT priority it's a business survival imperative. Any compromise to these systems directly undermines the organization's Center of Gravity: operational reliability that sustains customer trust.
 
-
 # Risk Severity
 Atlas Industrial's Risk Register identifies **five HIGH severity threats** that pose significant danger to the organization's operational capabilities and Center of Gravity. All five risks exhibit high impact across the CIA triad, with varying likelihood ratings that inform prioritization decisions.
 
-| Risk                           | System                   | Likelihood | Impact | CIA Impact                         | Risk Level |
-| ------------------------------ | ------------------------ | ---------- | ------ | ---------------------------------- | ---------- |
-| Web Application Attack Surface | Tryton ERP               | High       | High   | C: High, <br>I: High, <br>A:Medium | HIGH       |
-| Database Service Exposure      | PostgreSQL               |            |        |                                    |            |
-| Misconfiguration Risks         | Docker/SIEM/Database/ERP |            |        |                                    |            |
-| Certificate Misconfiguration   | Wazuh SIEM               |            |        |                                    |            |
-| User Endpoint Vulnerability    | Windows 10 Workstation   |            |        |                                    |            |
+| Risk                           | System                   | Likelihood | Impact | CIA Impact                       | Risk Level |
+| ------------------------------ | ------------------------ | ---------- | ------ | -------------------------------- | ---------- |
+| Web Application Attack Surface | Tryton ERP               | High       | High   | C: High<br>I: High<br>A:Medium   | High       |
+| Database Service Exposure      | PostgreSQL               | Medium     | High   | C: High<br>I: High<br>A:Medium   | High       |
+| Misconfiguration Risks         | Docker/SIEM/Database/ERP | Medium     | High   | C: High <br>I: High <br>A:Medium | High       |
+| Certificate Misconfiguration   | Wazuh SIEM               | Medium     | High   | C: High <br>I: High <br>A: High  | High       |
+| User Endpoint Vulnerability    | Windows 10 Workstation   | High       | High   | C: High<br>I:Medium<br>A:Medium  | High       |
+|                                |                          |            |        |                                  |            |
 
+**Risk Severity Summary:** 
+All five identified risks are rated **HIGH severity**, indicating that Atlas Industrial operates in a high-risk environment where multiple critical vulnerabilities threaten essential business functions. The concentration of HIGH risk findings across web applications, endpoints, databases, configurations, and monitoring systems demonstrates that **no single mitigation will suffice a comprehensive, defense in depth security strategy is required.
+
+The combination of **high likelihood** threats (web attacks and phishing) with **high impact** consequences (data breach, operational disruption) creates an urgent need for immediate security controls. These risks directly threaten the organization's Center of Gravity by undermining operational reliability, exposing customer data, and potentially halting business operations, all of which erode customer trust and competitive advantage.
