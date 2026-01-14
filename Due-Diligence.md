@@ -1,19 +1,13 @@
 
-
-
 # An open-source application to serve as a **critical business system**.
 
 ```ad-summary
 Seems like we need an ERP to solve most of our problems. Below are a list of some we can use. 
 ```
 
-<<<<<<< HEAD
-- `Axelor` - https://axelor.com/installation-guide/
-- `Tryton` - https://www.tryton.org/download >>>
-- `Dolibarr` - https://www.dolibarr.org/downloads.php
-=======
+
 - `Tryton` - https://www.tryton.org/download
->>>>>>> origin/main
+
 
 
 # A **SIEM solution** for monitoring and logging.
