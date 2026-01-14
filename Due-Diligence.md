@@ -1,21 +1,11 @@
 
 # An open-source application to serve as a **critical business system**.
 
-```ad-summary
-Seems like we need an ERP to solve most of our problems. Below are a list of some we can use. 
-```
-
-
-- `Tryton` - https://www.tryton.org/download
-
-
+- `Tryton ERP`
 
 # A **SIEM solution** for monitoring and logging.
 
-- `Splunk`
 - `Wazuh` 
-- `Security Onion`
-- `Elk Stack` (elasticsearch / logstash / kibana)
 
 # A **database solution** to support the SIEM or critical application.
 
@@ -32,9 +22,10 @@ Seems like we need an ERP to solve most of our problems. Below are a list of som
 
 > [!summary] For the web application, Ubuntu is the obvious choice. Ubuntu minimizes operational friction, it's easy to setup & build solutions, as well as hardening. Tryton will be used for it's extensive documentation, and clear support in every aspect of our CoG and our mission statement. It supports financing, billing, shipping, and much more. Additionally we can install plugins to further add whatever we may need in the future.
 
-| User Environment | Windows 10 Pro         |
+| App endpoint     | Host OS                |
 | ---------------- | ---------------------- |
-| PostgreSQL       | Windows 11 Server      |
-| SIEM             | Linux Ubuntu 22.04 LTS |
-| Tryton           | Linux Ubuntu 24.04 LTS |
-|                  |                        |
+| PostgreSQL       | Windows 11 Server (AD) |
+| Wazuh            | Ubuntu 22.04 LTS       |
+| Tryton           | Ubuntu 22.04 LTS       |
+| User Environment | Windows 10 Pro         |
+
