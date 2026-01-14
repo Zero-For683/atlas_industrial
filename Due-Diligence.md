@@ -26,7 +26,7 @@ Seems like we need an ERP to solve most of our problems. Below are a list of som
 
 > [!summary] User environment on Windows 10 may be the best choice, given that users (always the most vulnerable in any given system) will be the biggest weakness. In the event a flag is raised logging / monitoring, is easier to track. Additionally we can utilize this system to interact with the backend systems (SIEM, DB, and Tryton)
 
-> [!summary] The SIEM will be hosted on a linux distro. - more to follow once a SIEM is identified 
+> [!summary] The SIEM will be hosted on a linux the ubuntu distro, we are moving forward with wazuh as the SIEM. The overall compatibility it demonstrates once integrated with tryton and PSQL makes it a fit within our environment. Its flexible, light-weight, and can support long term in line with the other installs makes this a winning SIEM.
 
 > [!summary] For PostgreSQL is a compatible source for windows 11. per the documentation, since it'll provide long-term stability, fewer surprises, and straightforward hardening. Setup will be slightly more complicated. We're choosing PostgreSQL fits very well in this case since it's scalable, reliable, easy to use, and it has built-in functionality with Tryton, our main business application
 
