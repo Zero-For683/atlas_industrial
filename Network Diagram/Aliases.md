@@ -18,3 +18,12 @@ I'll define the IPs we'll use here, and keep them static
 - `PORT_KERBEROS = 88/tcp,88/udp` and (if needed) `464/tcp,464/udp`
 - `PORT_DNS = 53/tcp,53/udp`
 - `PORT_NTP = 123/udp`
+
+
+# Baseline security (applies to ALL firewalls)
+
+- **Default deny** inter-VLAN and inbound to firewall.
+- **Allow only explicit flows** required for business.
+- **Egress filtering**: allow outbound only where needed (updates, DNS, NTP), otherwise block.
+- **Log** all denies + all “important allows” (WAN→App, App→DB, Auth flows, admin access).
+- Enable **anti-lockout rule** (OPNsense does this by default on LAN; keep management restricted).
