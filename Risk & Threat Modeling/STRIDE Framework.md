@@ -16,7 +16,6 @@ The full form of “STRIDE” in the context of security is a mnemonic represent
 ```
  
    
-
 |                                                          |              |               |                 |                            |                       |                            |
 | -------------------------------------------------------- | ------------ | ------------- | --------------- | -------------------------- | --------------------- | -------------------------- |
 | **Scenario**                                             | **Spoofing** | **Tampering** | **Repudiation** | **Information Disclosure** | **Denial of Service** | **Elevation of Privilege** |
