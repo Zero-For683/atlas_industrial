@@ -1,37 +1,19 @@
 
-# Inbound Rules (VLAN 20 -> VLAN 30)
-
-| Port      | Protocol | Purpose                 | Action    | Logging |
-| --------- | -------- | ----------------------- | --------- | ------- |
-| 88        | TCP/UDP  | Kerberos authentication | **ALLOW** | Enabled |
-| 389       | TCP      | LDAP directory queries  | **ALLOW** | Enabled |
-| 636       | TCP      | LDAPS (secure LDAP)     | **ALLOW** | Enabled |
-| 53        | UDP      | DNS queries             | **ALLOW** | Enabled |
-| All other | ANY      | Everything else         | **DENY**  | Enabled |
-This prevents lateral movement across other identity services. All authentication attempts will be logged to the Wazuh SIEM.
 # Allow
 
 `VLAN20_TRYTON -> HOST_WIN2025`: TCP 88 (Kerberos authentication)  
 `VLAN20_TRYTON -> HOST_WIN2025`: TCP 389 (LDAP directory queries)  
-`VLAN20_TRYTON -> HOST_WIN2025`: TCP 636 (LDAPS secure directory queries)  
+`VLAN20_TRYTON -> HOST_WIN2025`: TCP 636 (LDAPS secure queries)  
 `VLAN20_TRYTON -> HOST_WIN2025`: UDP 53 (DNS resolution)
 
-# Deny
+`VLAN50_USERS -> HOST_WIN2025`: TCP 88 (Kerberos authentication)  
+`VLAN50_USERS -> HOST_WIN2025`: TCP 389 (LDAP queries)  
+`VLAN50_USERS -> HOST_WIN2025`: TCP 636 (LDAPS)  
+`VLAN50_USERS -> HOST_WIN2025`: TCP 445 (SMB for Group Policy)  
+`VLAN50_USERS -> HOST_WIN2025`: TCP 135 (RPC endpoint mapper)  
+`VLAN50_USERS -> HOST_WIN2025`: TCP 49152-65535 (RPC dynamic ports)  
+`VLAN50_USERS -> HOST_WIN2025`: UDP 53 (DNS queries)
 
-`VLAN20_TRYTON -> HOST_WIN2025`: ALL other ports (blocked & logged)  
-`VLAN20_TRYTON -> VLAN30_ANY`: ALL (no access to rest of VLAN 30)
+`HOST_ADMIN_WS (192.168.1.10) -> HOST_WIN2025`: TCP 3389 (RDP admin access only)
 
-
-# Inbound Rules (VLAN 50 -> VLAN30)
-
-| Port        | Protocol | Purpose                 | Action    | Logging |
-| ----------- | -------- | ----------------------- | --------- | ------- |
-| 88          | TCP/UDP  | Kerberos authentication | **ALLOW** | Enabled |
-| 389         | TCP      | LDAP queries            | **ALLOW** | Enabled |
-| 636         | TCP      | LDAPS                   | **ALLOW** | Enabled |
-| 445         | TCP      | SMB (Group Policy)      | **ALLOW** | Enabled |
-| 135         | TCP      | RPC endpoint mapper     | **ALLOW** | Enabled |
-| 49152-65535 | TCP      | RPC dynamic ports       | **ALLOW** | Enabled |
-| 53          | UDP      | DNS queries             | **ALLOW** | Enabled |
-| All other   | ANY      | Everything else         | **DENY**  | Enabled |
-This allows full domain services for Windows 10 workstation and allows us to detect authentication anomalies. 
+`HOST_WIN2025 -> HOST_WAZUH`: TCP 1514/1515 (Wazuh agent logs to SIEM)
