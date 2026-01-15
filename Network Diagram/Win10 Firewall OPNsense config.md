@@ -1,5 +1,5 @@
 
-# Allow
+# Allow outbound rules
 
 `NET_USERS -> HOST_TRYTON`: TCP 443 (internal access to the web page)
 `NET_USERS -> DNS/NTP`: To the DC (`53 TCP/UDP` & `123 UDP`)
