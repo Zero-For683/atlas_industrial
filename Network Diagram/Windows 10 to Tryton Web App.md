@@ -41,18 +41,3 @@ Prevents users from accessing internal servers directly.
 > [!tip] **Log dropped outbound traffic for SIEM ingestion**  
 > Helps detect compromised workstations attempting lateral movement.
 
-## 📌 **Summary (Team Notes)**
-
-- Users reach Tryton only through **HTTPS 443**, not port 8000.
-    
-- Windows Firewall only needs outbound allow rules for:
-    
-    - **443** (to Tryton NAT address)
-        
-    - **DNS / NTP**
-        
-    - **Kerberos / LDAP / SMB**
-        
-    - **Wazuh agent ports (1514/1515)** if required
-        
-- Everything else remains blocked by default.
