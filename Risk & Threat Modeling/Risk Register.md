@@ -15,6 +15,7 @@ Tryton Documentation
 | ==**CIA Impact**== | ==**C: High*, *I: High*, *A: Medium**==                                                                       |     |     |
 | **Risk Level**     | **High**                                                                                                      |     |     |
 | **Mitigation**     | MFA, rate limiting, WAF rules, hardened Docker configuration, encrypted communication, secure coding settings |     |     |
+
 ## **2. Database Service Exposure**
 
 **System:** PostgreSQL Database  
