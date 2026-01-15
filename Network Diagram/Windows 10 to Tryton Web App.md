@@ -14,7 +14,6 @@ All other traffic is blocked and logged for SIEM analysis.
 | **VLAN30 – Workstations**   | Internal user endpoints         | 192.168.30.0/24 |
 | **VLAN20 – Server Network** | Tryton server + PostgreSQL      | 172.168.20.0/24 |
 | **OPNsense LAN Interfaces** | Enforces segmentation and rules | —               |
-# **3. Final Firewall Rule Table (Submission-Ready)**
 
 ## ❌ **Deny Rules**
 
