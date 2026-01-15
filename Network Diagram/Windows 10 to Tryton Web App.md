@@ -9,6 +9,13 @@ All other traffic is blocked and logged for SIEM analysis.
 `WIN10_PRO  -->  NTP_SERVER : UDP 123 `
 
 
+| Zone                        | Description                     | Subnet          |
+| --------------------------- | ------------------------------- | --------------- |
+| **VLAN30 – Workstations**   | Internal user endpoints         | 192.168.30.0/24 |
+| **VLAN20 – Server Network** | Tryton server + PostgreSQL      | 172.168.20.0/24 |
+| **OPNsense LAN Interfaces** | Enforces segmentation and rules | —               |
+# **3. Final Firewall Rule Table (Submission-Ready)**
+
 ## ❌ **Deny Rules**
 
 `ANY_REMOTE  -->  WIN10_PRO : ANY (Inbound)`
@@ -40,4 +47,5 @@ Prevents users from accessing internal servers directly.
 
 > [!tip] **Log dropped outbound traffic for SIEM ingestion**  
 > Helps detect compromised workstations attempting lateral movement.
+
 
