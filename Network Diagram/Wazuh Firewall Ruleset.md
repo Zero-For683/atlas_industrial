@@ -11,7 +11,9 @@
  ```
 
 ```ad-info
-Port 1514- Wazuh Manager establishes communication with the wazuh agent.  Allowing the manager to communicate with the clients via 1514 TCP or UDP
+- Wazuh Manager establishes communication with the wazuh agent.  Allowing the manager to communicate with the clients via 1514 TCP or UDP
+  
+  
 
 
 
