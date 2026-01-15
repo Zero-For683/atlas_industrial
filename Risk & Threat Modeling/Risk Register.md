@@ -12,9 +12,10 @@ Tryton Documentation
 | **Vulnerability**  | Public-facing login page, weak input validation, outdated web components                                      |     |     |
 | **Likelihood**     | **High**                                                                                                      |     |     |
 | **Impact**         | **High** — ERP manages inventory, production workflows, customer data                                         |     |     |
-| ==**CIA Impact**== | ==**C: High*, *I: High*, *A: Medium**==                                                                       |     |     |
+| **CIA Impact** | **C: High*, *I: High*, *A: Medium**                                                                       |     |     |
 | **Risk Level**     | **High**                                                                                                      |     |     |
 | **Mitigation**     | MFA, rate limiting, WAF rules, hardened Docker configuration, encrypted communication, secure coding settings |     |     |
+
 ## **2. Database Service Exposure**
 
 **System:** PostgreSQL Database  
@@ -22,15 +23,15 @@ Tryton Documentation
 
 PostgreSQL Documentation
 
-|Item|Details|
-|---|---|
-|**Threat**|External attacker exploiting exposed database port (5432)|
-|**Vulnerability**|Open port exposure, brute-force attacks, SQL injection attempts|
-|**Likelihood**|**Medium** (common attack vector)|
-|**Impact**|**High** — Database holds financial, inventory, and customer data|
-|==**CIA Impact**==|==**Confidentiality: High**, **Integrity: High**, **Availability: Medium**==|
-|**Risk Level**|**High**|
-|**Mitigation**|Firewall rules, network segmentation, disable remote access, enable TLS, strong passwords, change default port|
+| Item               | Details                                                                                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **Threat**         | External attacker exploiting exposed database port (5432)                                                      |
+| **Vulnerability**  | Open port exposure, brute-force attacks, SQL injection attempts                                                |
+| **Likelihood**     | **Medium** (common attack vector)                                                                              |
+| **Impact**         | **High** — Database holds financial, inventory, and customer data                                              |
+| **CIA Impact** | **Confidentiality: High**, **Integrity: High**, **Availability: Medium**                                   |
+| **Risk Level**     | **High**                                                                                                       |
+| **Mitigation**     | Firewall rules, network segmentation, disable remote access, enable TLS, strong passwords, change default port |
 ## **3. Misconfiguration Risks (Docker, SIEM, Database, ERP)**
 
 **System:** Entire environment (Tryton, PostgreSQL, Wazuh)  
