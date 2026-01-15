@@ -34,11 +34,11 @@
 
 ## **Configurations**
 
-⚠️ **Windows Defender Firewall enabled on all profiles (Domain, Public, Private)**
+ **Windows Defender Firewall enabled on all profiles (Domain, Public, Private)**
 
-🔒 **Default action: BLOCK all inbound and outbound traffic (explicit allow only)**
+ **Default action: BLOCK all inbound and outbound traffic (explicit allow only)**
 
-📊 **All denied traffic is logged and forwarded to Wazuh SIEM for analysis**
+**All denied traffic is logged and forwarded to Wazuh SIEM for analysis**
 
-🚨 **CRITICAL ALERT if AD server attempts Internet connection (indicates compromise)**
+ **CRITICAL ALERT if AD server attempts Internet connection (indicates compromise)**
 
