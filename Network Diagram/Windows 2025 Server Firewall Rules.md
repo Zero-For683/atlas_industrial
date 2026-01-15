@@ -34,3 +34,4 @@ This prevents lateral movement across other identity services. All authenticatio
 | 49152-65535 | TCP      | RPC dynamic ports       | **ALLOW** | Enabled |
 | 53          | UDP      | DNS queries             | **ALLOW** | Enabled |
 | All other   | ANY      | Everything else         | **DENY**  | Enabled |
+This allows full domain services for Windows 10 workstation and allows us to detect authentication anomalies. 
