@@ -6,11 +6,11 @@ This supports business operations while maintaining network segmentation.
 
 # **2. Network Zones Involved**
 
-|Zone|Description|Subnet|
-|---|---|---|
-|**VLAN30 – Workstations**|Internal user endpoints|192.168.30.0/24|
-|**VLAN20 – Server Network**|Tryton server + PostgreSQL|172.168.20.0/24|
-|**OPNsense LAN Interfaces**|Enforces segmentation and rules|—|
+| Zone                        | Description                     | Subnet          |
+| --------------------------- | ------------------------------- | --------------- |
+| **VLAN30 – Workstations**   | Internal user endpoints         | 192.168.30.0/24 |
+| **VLAN20 – Server Network** | Tryton server + PostgreSQL      | 172.168.20.0/24 |
+| **OPNsense LAN Interfaces** | Enforces segmentation and rules | —               |
 # **3. Final Firewall Rule Table (Submission-Ready)**
 
 | Priority | Rule Name                  | Source          | Destination  | Protocol/Ports | Action | Log? | Purpose                      |
