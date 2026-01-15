@@ -24,14 +24,14 @@ This prevents lateral movement across other identity services. All authenticatio
 
 # Inbound Rules (VLAN 50 -> VLAN30)
 
-
-| Port        | Protocol | Purpose                 | Action    |
-| ----------- | -------- | ----------------------- | --------- |
-| 88          | TCP/UDP  | Kerberos authentication | **ALLOW** |
-| 389         | TCP      | LDAP queries            | **ALLOW** |
-| 636         | TCP      | LDAPS                   | **ALLOW** |
-| 445         | TCP      | SMB (Group Policy)      | **ALLOW** |
-| 135         | TCP      | RPC endpoint mapper     | **ALLOW** |
-| 49152-65535 | TCP      | RPC dynamic ports       | **ALLOW** |
-| 53          | UDP      | DNS queries             | **ALLOW** |
-| All other   | ANY      | Everything else         | **DENY**  |
+| Port        | Protocol | Purpose                 | Action    | Logging |
+| ----------- | -------- | ----------------------- | --------- | ------- |
+| 88          | TCP/UDP  | Kerberos authentication | **ALLOW** | Enabled |
+| 389         | TCP      | LDAP queries            | **ALLOW** | Enabled |
+| 636         | TCP      | LDAPS                   | **ALLOW** | Enabled |
+| 445         | TCP      | SMB (Group Policy)      | **ALLOW** | Enabled |
+| 135         | TCP      | RPC endpoint mapper     | **ALLOW** | Enabled |
+| 49152-65535 | TCP      | RPC dynamic ports       | **ALLOW** | Enabled |
+| 53          | UDP      | DNS queries             | **ALLOW** | Enabled |
+| All other   | ANY      | Everything else         | **DENY**  | Enabled |
+This allows full domain services for Windows 10 workstation and allows us to detect authentication anomalies. 
