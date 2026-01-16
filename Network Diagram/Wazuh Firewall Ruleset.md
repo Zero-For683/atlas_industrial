@@ -26,11 +26,6 @@ UDP 123 -> Time sync
 
 ```
 
-
-
-
-
-
 ```ad-info
 - Wazuh Manager establishes communication with the wazuh agent.  Allowing the manager to communicate with the clients via 1514 TCP or UDP
   
@@ -39,4 +34,12 @@ UDP 123 -> Time sync
 
 
 ```
+
+# Configurations
+
+```ad-danger
+**No outbound traffic should occur outside of the kerberos handshake.**
+
+```
+
 
