@@ -5,15 +5,8 @@ All other traffic is blocked and logged for SIEM analysis.
 
 `WIN10_PRO  -->  TRYTON_WEB_APP : TCP 443 (Outbound)`
 `TRYTON_WEB_APP  -->  WIN10_PRO : ESTABLISHED/RELATED`
-`WIN10_PRO  -->  DNS_SERVERS : UDP/TCP 53 
-`WIN10_PRO  -->  NTP_SERVER : UDP 123 `
-
-
-| Zone                        | Description                     | Subnet          |
-| --------------------------- | ------------------------------- | --------------- |
-| **VLAN30 – Workstations**   | Internal user endpoints         | 192.168.30.0/24 |
-| **VLAN20 – Server Network** | Tryton server + PostgreSQL      | 172.168.20.0/24 |
-| **OPNsense LAN Interfaces** | Enforces segmentation and rules | —               |
+`WIN10_PRO  -->  HOST_TRYTON  : TCP 443 (HTTPS access to Tryton web page) 
+`WIN10_PRO  -->  DNS/NTP : TCP/UDP 53 & UDP 123 (DNS resolution + time sync) `
 
 ## ❌ **Deny Rules**
 
@@ -29,22 +22,16 @@ Prevents users from accessing internal servers directly.
 
 ## ⚙️ **Configurations**
 
-> [!danger] **Workstation cannot directly access Tryton on port 8000**  
-> Port 8000 is _never_ exposed to clients — access is only through HTTPS 443 → NAT → 8000.
+> [!danger] **WIN10_PRO must NOT be able to access the OPNsense admin interface**  
+> Web-based firewall management (HTTPS 443) is restricted to the ADMIN_VLAN only.
 
 ---
 
-> [!note] **Windows Firewall must be set to "Block inbound connections" (default)**  
-> Ensures only established sessions from HTTPS responses are allowed back in.
+> [!note] **Firewall management access restricted to designated admin workstation**  
+> Ensures users cannot attempt privilege escalation or misconfiguration.
 
 ---
 
-> [!info] **Outbound filtering enabled for sensitive zones**  
-> Only web (443), DNS (53), NTP (123), Kerberos (88/389/445), and Wazuh agent ports should be allowed.
-
----
-
-> [!tip] **Log dropped outbound traffic for SIEM ingestion**  
-> Helps detect compromised workstations attempting lateral movement.
-
+> [!info] **All denied traffic is logged to the Wazuh SIEM**  
+> Enables detection of lateral movement, malware callbacks, and policy violations.
 
