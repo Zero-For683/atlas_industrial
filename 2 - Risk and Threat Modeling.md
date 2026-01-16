@@ -21,7 +21,6 @@ The organization's operational capability depends on several interconnected syst
 - **Windows 10 User Workstation:** Entry point with little to no support, becomes an easy target for phishing and credential theft attacks. 
 
 ## Vulnerability Capability Overlap
-The Venn diagram analysis shows a critical problem: several critical requirements (CR) fall within the critical vulnerability (CV) area, which means essential business functions become exposed to threats.
 - **Inventory Management:** The Tryton ERP system is vulnerable to web attacks. Compromised inventory data leads to disrupted order fulfillment and scheduled production.
 - **Supplier Relationships:** Supply chain communication and data in the ERP are exposed to database attacks and possible credential theft, causing a chance of disrupting deliveries. 
 - **Company Employee Portal:** Phishing attacks (Attack Vector #1) target employee credentials, creating unauthorized access and lateral movement to critical systems.
