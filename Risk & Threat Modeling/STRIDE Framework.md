@@ -24,3 +24,4 @@ The full form of “STRIDE” in the context of security is a mnemonic represent
 | **Misconfiguration Risks (Docker, SIEM, Database, ERP)** |              | ✔             |                 | ✔                          | ✔                     |                            |
 | **Certificate Misconfiguration (Wazuh)a**.               | ✔            | ✔             | ✔               | ✔                          | ✔                     | ✔                          |
 | **User Endpoint Vulnerability (Windows 10 Workstation)** | ✔            | ✔             |                 | ✔                          |                       | ✔                          |
+|                                                          |              |               |                 |                            |                       |                            |
