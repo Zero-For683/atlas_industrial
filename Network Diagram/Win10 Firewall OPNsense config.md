@@ -1,4 +1,3 @@
-
 # Allow outbound rules
 
 `NET_USERS -> HOST_TRYTON`: TCP 443 (internal access to the web page)
@@ -6,6 +5,10 @@
 `NET_USERS -> PORT_KERBEROS`: To the DC
 `NET_USERS -> HOST_WAZUH`: TCP 1514/1515 for the agent to run
 
+
+# Allow inbound rules
+
+`PORT_KERBEROS` -> `NET_USERS`: Allow inbound traffic to negotiate and handle Kerberos interactions
 # Deny
 
 `NET_USERS -> ANY: ALL`
