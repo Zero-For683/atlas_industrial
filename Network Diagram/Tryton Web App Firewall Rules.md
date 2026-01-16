@@ -1,14 +1,21 @@
 
-These rules ensure that the workstation can only reach the Tryton Web App through HTTPS.  
-All other traffic is blocked and logged for SIEM analysis.
-## ✅ **Allow Rules**
+> [!info] These rules ensure that the workstation can only reach workstation in the DMZ through HTTPS, and `kerberos`. All other traffic is blocked and logged for SIEM analysis.
+## Allow - Inbound
 
-`WIN10_PRO  -->  TRYTON_WEB_APP : TCP 443 (Outbound)`
-`TRYTON_WEB_APP  -->  WIN10_PRO : ESTABLISHED/RELATED`
 `WIN10_PRO  -->  HOST_TRYTON  : TCP 443 (HTTPS access to Tryton web page) 
-`WIN10_PRO  -->  DNS/NTP : TCP/UDP 53 & UDP 123 (DNS resolution + time sync) `
 
-## ❌ **Deny Rules**
+- `Win10` --> From DMZ IP (192.168.1) on port 8000 for customer portal
+- `AD` & `Kerberos` --> From VLAN30 (172.168.30)
+- `2025 SERV` --> From VLAN 20 (172.168.20) for SQL queries
+
+
+## Allow - Outbound
+
+- `Win10` --> From DMZ IP (192.168.1) on port 8000 for customer portal
+- `2025 SERV` --> From VLAN 20 (172.168.20) for SQL queries
+- `Wazuh manager`: TCP 1514/1515 for the agent to deliver data
+
+## **Deny Rules**
 
 `ANY_REMOTE  -->  WIN10_PRO : ANY (Inbound)`
 
@@ -22,7 +29,7 @@ Prevents users from accessing internal servers directly.
 
 ## ⚙️ **Configurations**
 
-> [!danger] **WIN10_PRO must NOT be able to access the OPNsense admin interface**  
+> [!danger] **Ubuntu 22.04 (Tryton) must NOT be able to access the OPNsense admin interface**  
 > Web-based firewall management (HTTPS 443) is restricted to the ADMIN_VLAN only.
 
 ---

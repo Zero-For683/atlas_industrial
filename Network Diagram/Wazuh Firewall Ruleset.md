@@ -1,39 +1,27 @@
 
 
- ```ad-important
- Allow: Inbound Traffic
- 
- - AD & Kerberos --> From VLAN30 (172.168.30)
- - PostgreSQL --> From VLAN20 (172.168.20)
- - windows 10 --> From IP 192.168.1 (Agent data)
- - Tryton Web App & Customer portal --> VLAN 20 (172.168.20)
- 
- ```
 
-```ad-important
+> [!info] Wazuh Manager establishes communication with the wazuh agent.  Allowing the manager to communicate with the clients via 1514/1515 TCP & UDP
 
-Allow: OutBound Traffic
+## **Allow - Inbound**
 
-- Kerberos, Wazuh manager need to communicate with kerberos to establihs a ticket for proper sessions. Connecting the SIEM to the Domain Controller.
-This will ensure the process of session renewals. Overall allowing scope and controll
+ Allow: Inbound Traffic from Agents on port 1515/1514:
+- `AD` & `Kerberos` --> From VLAN30 (172.168.30)
+- `Windows 10` --> From IP DMZ (192.168.1)
+- `Tryton Web App` & `Customer portal` --> VLAN 20 (172.168.20)
+- `2025 SERV` -> `UDP/TCP 88` (Kerberos)
+- `2025 SERV` -> `TCP 636` (LDAPS)
+- `2025 SERV` -> `UDP 123` Network Time Protocol (time syncs)
 
-Ports: 
-UPD/TCP 88 -> Kerberos ticket request
-TCP 636 -> LDAPS, allowing directories to be identified securley
-UDP 123 -> Time sync  
+## Allow - Outbound
 
 
+> [!info] Wazuh manager needs to communicate with kerberos to establish tickets for sessions. This will make session renewals and session creations possible.
 
-```
+- `2025 SERV` -> `UDP/TCP 88` (Kerberos)
+- `2025 SERV` -> `TCP 636` (LDAPS)
+- `2025 SERV` -> `UDP 123` Network Time Protocol (time syncs)
 
-```ad-info
-- Wazuh Manager establishes communication with the wazuh agent.  Allowing the manager to communicate with the clients via 1514 TCP or UDP
-  
-  
-
-
-
-```
 
 # Configurations
 
