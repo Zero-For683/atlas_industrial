@@ -5,6 +5,7 @@
 `VLAN20_TRYTON -> HOST_WIN2025`: TCP 389 (LDAP directory queries)  
 `VLAN20_TRYTON -> HOST_WIN2025`: TCP 636 (LDAPS secure queries)  
 `VLAN20_TRYTON -> HOST_WIN2025`: UDP 53 (DNS resolution)
+`VLAN20_TRYTON -> HOST_WIN2025`: TCP 443 (Admin panel for Tryton)
 
 `VLAN50_USERS -> HOST_WIN2025`: TCP 88 (Kerberos authentication)  
 `VLAN50_USERS -> HOST_WIN2025`: TCP 389 (LDAP queries)  
@@ -19,7 +20,7 @@
 ## **Allow - Outbound**
 
 `HOST_WIN2025 -> HOST_WAZUH (172.168.10.0/24)`: TCP 1514/1515 (Wazuh agent logs to SIEM)
-
+`VLAN20_TRYTON -> HOST_WIN2025`: TCP 443 (Admin panel for Tryton)
 ## **Deny - Inbound**
 
 `VLAN50_USERS_OTHER -> HOST_WIN2025`: TCP 3389 (block RDP from non-admin workstations)  
