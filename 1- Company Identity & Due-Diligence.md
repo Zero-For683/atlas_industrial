@@ -1,3 +1,7 @@
+![[Pasted image 20260116084528.png]]
+
+---
+
 
 # An open-source application to serve as a **critical business system**.
 
