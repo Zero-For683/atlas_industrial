@@ -6,7 +6,7 @@
 
 
 # Executive Summary
-- Atlas Industrial LLC operates as an online manufacturer and distributor of high-quality computer components, with a mission to provide reliable, efficient technology solutions to businesses and consumers. The organization's Center of Gravity as identified in the organizational analysis is "operational reliability that sustains customer trust." This means that any disruption to system availability, data integrity, or confidentiality directly threatens the core value proposition that keeps customers choosing Atlas Industrial over competitors.
+- Atlas Industrial LLC operates as an online manufacturer and distributor of high quality computer components, with a mission to provide reliable, efficient technology solutions to businesses and consumers. The organization's Center of Gravity as identified in the organizational analysis is "operational reliability that sustains customer trust." This means that any disruption to system availability, data integrity, or confidentiality directly threatens the core value proposition that keeps customers choosing Atlas Industrial over competitors.
 
 ## Threat Landscape Overview
 - **External Threats:** Financially motivated cybercriminals targeting customer data and payment information, opportunistic attackers exploiting public facing web services like our Tryton ERP system, and potential supply chain attackers that want to disrupt Atlas's technology manufacturing and distribution operations. 
@@ -21,7 +21,6 @@ The organization's operational capability depends on several interconnected syst
 - **Windows 10 User Workstation:** Entry point with little to no support, becomes an easy target for phishing and credential theft attacks. 
 
 ## Vulnerability Capability Overlap
-The Venn diagram analysis shows a critical problem: several critical requirements (CR) fall within the critical vulnerability (CV) area, which means essential business functions become exposed to threats.
 - **Inventory Management:** The Tryton ERP system is vulnerable to web attacks. Compromised inventory data leads to disrupted order fulfillment and scheduled production.
 - **Supplier Relationships:** Supply chain communication and data in the ERP are exposed to database attacks and possible credential theft, causing a chance of disrupting deliveries. 
 - **Company Employee Portal:** Phishing attacks (Attack Vector #1) target employee credentials, creating unauthorized access and lateral movement to critical systems.
