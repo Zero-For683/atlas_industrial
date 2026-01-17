@@ -2,7 +2,6 @@
 
 ---
 
-
 # An open-source application to serve as a **critical business system**.
 
 - `Tryton ERP`
