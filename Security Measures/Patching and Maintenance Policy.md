@@ -144,6 +144,15 @@ No non-emergency patching during:
 - Documents incidents in ticketing system
     
 
+**Compliance Officer**
+
+- Ensures organizational adherence to regulatory frameworks (CIS Controls, NIST, ISO 27001) and internal security policies
+    
+- Conducts compliance audits, identifies gaps, and verifies security controls meet industry standards
+    
+- Documents compliance status and prepares reports for management and regulatory bodies
+    
+- Coordinates training, policy enforcement, and remediation efforts to maintain continuous compliance
 ---
 
 ## **5. PATCH DEPLOYMENT WORKFLOW**
