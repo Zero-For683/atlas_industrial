@@ -41,15 +41,16 @@ PostgreSQL Documentation
 
 Tryton Documentation
 
-|Item|Details|
-|---|---|
-|**Threat**|Accidental misconfiguration that exposes ports, credentials, or debug services|
-|**Vulnerability**|Weak .env file permissions, exposed Docker ports, default creds|
-|**Likelihood**|**Medium**|
-|**Impact**|**High** — system-wide compromise possible|
-|**CIA Impact**|**C: High**, **I: High**, **A: Medium**|
-|**Risk Level**|**High**|
-|**Mitigation**|Enforce .env file permissions, disable default Docker networks, validate compose files, use hardened images, perform CIS Docker benchmarks|
+| Item              | Details                                                                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Threat**        | Accidental misconfiguration that exposes ports, credentials, or debug services                                                             |
+| **Vulnerability** | Weak .env file permissions, exposed Docker ports, default creds                                                                            |
+| **Likelihood**    | **Medium**                                                                                                                                 |
+| **Impact**        | **High** — system-wide compromise possible                                                                                                 |
+| **CIA Impact**    | **C: High**, **I: High**, **A: Medium**                                                                                                    |
+| **Risk Level**    | **High**                                                                                                                                   |
+| **Mitigation**    | Enforce .env file permissions, disable default Docker networks, validate compose files, use hardened images, perform CIS Docker benchmarks |
+
 ## **4. Certificate Misconfiguration (Wazuh)**
 
 **System:** Wazuh SIEM (Dashboard + Manager + Indexer)  
@@ -66,6 +67,7 @@ Wazuh Installation
 | **CIA Impact**    | **C: High**, **I: High**, **A: High**                                                                                         |
 | **Risk Level**    | **High**                                                                                                                      |
 | **Mitigation**    | Generate correct certs, enforce HTTPS, validate pem files, restart faulty services, use automated certificate lifecycle tools |
+
 ## **5. User Endpoint Vulnerability (Windows 10 Workstation)**
 
 **System:** Windows 10 endpoint  
