@@ -1,0 +1,20 @@
+services:
+  server:
+    image: tryton/tryton:${VERSION}
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_PASSWORD=${DB_PASSWORD}
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
