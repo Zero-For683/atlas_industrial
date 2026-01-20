@@ -68,7 +68,7 @@ Patches are classified by severity to determine appropriate response timelines:
     
 - Emergency patches for internet-facing systems (Tryton web interface) receive highest priority
     
-- Emergency maintenance requires 4-hour advance notification to stakeholders when feasible
+- Emergency maintenance requires 4 hour advance notification to stakeholders when feasible
     
 
 ## 3.3 Change Freeze Periods
