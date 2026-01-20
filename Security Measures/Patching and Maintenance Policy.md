@@ -88,15 +88,15 @@ No non-emergency patching during:
 
 ## 4.1 Responsibility Matrix (RACI)
 
-|**Activity**|**System Owner**|**Security Engineer**|**Change Approver**|**On-Call Analyst**|
-|---|---|---|---|---|
-|**Vulnerability assessment & prioritization**|C|R/A|I|I|
-|**Patch testing in non-prod**|R/A|C|I|-|
-|**Production patch deployment**|R/A|C|I|I|
-|**Emergency patch approval**|C|R|A|I|
-|**Post-patch validation**|R/A|C|-|C|
-|**Rollback execution**|R/A|C|I|C|
-|**Compliance reporting**|C|R/A|I|-|
+| **Activity**                                  | **System Owner** | **Security Engineer** | **Change Approver** | **On-Call Analyst** | Compliance Officer |
+| --------------------------------------------- | ---------------- | --------------------- | ------------------- | ------------------- | ------------------ |
+| **Vulnerability assessment & prioritization** | C                | R/A                   | I                   | I                   | A                  |
+| **Patch testing in non-prod**                 | R/A              | C                     | I                   | -                   | C                  |
+| **Production patch deployment**               | R/A              | C                     | I                   | I                   | C                  |
+| **Emergency patch approval**                  | C                | R                     | A                   | I                   | R/A                |
+| **Post-patch validation**                     | R/A              | C                     | -                   | C                   | I                  |
+| **Rollback execution**                        | R/A              | C                     | I                   | C                   | I                  |
+| **Compliance reporting**                      | C                | R/A                   | I                   | -                   | R/A                |
 
 **Legend**: R = Responsible, A = Accountable, C = Consulted, I = Informed
 
