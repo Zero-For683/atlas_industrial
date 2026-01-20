@@ -16,8 +16,6 @@ This matrix enforces **least privilege**, limits lateral movement, and aligns wi
 |**Security Administrator**|Admin login|❌ No access|❌ No access|Admin|Firewall admin|Admin|
 |**Service Account**|❌ No login|App auth only|Limited role|Log shipping|❌ No access|Kerberos only|
 
----
-
 ## **Access Control Notes**
 
 - **No users** have direct database access except DB administrators.
