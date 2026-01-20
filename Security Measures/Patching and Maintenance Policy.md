@@ -330,14 +330,14 @@ No non-emergency patching during:
 
 Initiate rollback if any of the following occur within 24 hours post-patch:
 
-|**Trigger**|**Severity**|**Rollback Authority**|
-|---|---|---|
-|**Critical service outage** (Tryton/PostgreSQL unavailable)|Immediate|System Owner or On-Call Analyst|
-|**Data corruption or loss**|Immediate|System Owner + Change Approver|
-|**Widespread endpoint failures** (>20% of Windows 10 systems)|Immediate|System Owner|
-|**Security tool failure** (Wazuh agents offline, firewall rules broken)|Within 2 hours|Security Engineer|
-|**Performance degradation >30%** (response times, CPU/memory)|Within 8 hours|System Owner|
-|**Failed validation checklist** (>2 critical items)|Before production release|System Owner|
+| **Trigger**                                                             | **Severity**              | **Rollback Authority**          |
+| ----------------------------------------------------------------------- | ------------------------- | ------------------------------- |
+| **Critical service outage** (Tryton/PostgreSQL unavailable)             | Immediate                 | System Owner or On-Call Analyst |
+| **Data corruption or loss**                                             | Immediate                 | System Owner + Change Approver  |
+| **Widespread endpoint failures** (>20% of Windows 10 systems)           | Immediate                 | System Owner                    |
+| **Security tool failure** (Wazuh agents offline, firewall rules broken) | Within 2 hours            | Security Engineer               |
+| **Performance degradation >30%** (response times, CPU/memory)           | Within 8 hours            | System Owner                    |
+| **Failed validation checklist** (>2 critical items)                     | Before production release | System Owner                    |
 
 ## 6.2 Rollback Methods by System Type
 
@@ -441,13 +441,13 @@ After rollback execution:
 
 ## 7.1 Pre-Patch Backup Requirements
 
-|**System**|**Backup Method**|**Backup Location**|**Retention**|**RTO**|**RPO**|
-|---|---|---|---|---|---|
-|**Tryton VM**|Hypervisor snapshot|Local datastore + network share|2 snapshots|30 min|0 (snapshot before patch)|
-|**PostgreSQL Database**|`pg_dumpall` script|Network file server (UNC path)|3 backups|1 hour|0 (backup before patch)|
-|**Wazuh VM**|Hypervisor snapshot|Local datastore|2 snapshots|30 min|0 (snapshot before patch)|
-|**Windows 10 Endpoints**|System Restore point|Local C:\ drive|Auto-managed|1 hour|24 hours|
-|**Configuration Files**|Git repository or file copy|Version control system or backup server|Indefinite|15 min|0 (pre-patch commit)|
+| **System**               | **Backup Method**           | **Backup Location**                     | **Retention** | **RTO** | **RPO**                   |
+| ------------------------ | --------------------------- | --------------------------------------- | ------------- | ------- | ------------------------- |
+| **Tryton VM**            | Hypervisor snapshot         | Local datastore + network share         | 2 snapshots   | 30 min  | 0 (snapshot before patch) |
+| **PostgreSQL Database**  | `pg_dumpall` script         | Network file server (UNC path)          | 3 backups     | 1 hour  | 0 (backup before patch)   |
+| **Wazuh VM**             | Hypervisor snapshot         | Local datastore                         | 2 snapshots   | 30 min  | 0 (snapshot before patch) |
+| **Windows 10 Endpoints** | System Restore point        | Local C:\ drive                         | Auto-managed  | 1 hour  | 24 hours                  |
+| **Configuration Files**  | Git repository or file copy | Version control system or backup server | Indefinite    | 15 min  | 0 (pre-patch commit)      |
 
 ## 7.2 Backup Validation
 
