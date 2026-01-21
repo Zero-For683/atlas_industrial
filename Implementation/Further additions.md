@@ -1,3 +1,9 @@
+>[!danger] Delete all `phorenzics` users. There are spies amongst us 
+
+>[!danger] Once all the applications are stood up, delete all `.env` and `docker-compose.yml`/`compose.yml` files. They contain passwords in cleartext
+>.
+>Also delete browser history incase creds were leaked when generating passwords
+
 
 # Service accounts
 
