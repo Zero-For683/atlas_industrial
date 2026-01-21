@@ -106,4 +106,4 @@ This way Windows 10 cant directly communicate with 2025's server
 
 Configure what sorts of logs the agents pull, and build SIEM queries. 
 
-Its important to do this AFTER the firewall step so we can pull from it. 
+Its important to do this AFTER the firewall step so we can pull from it. SSSSSs
