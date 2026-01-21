@@ -157,6 +157,17 @@ wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.14
 wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.14.1-1_amd64.deb && sudo WAZUH_MANAGER='192.168.100.149' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='Tryton-Ubuntu' dpkg -i ./wazuh-agent_4.14.1-1_amd64.deb
 ```
 
+```ad-important
+After running the commands for linux, run this:
+
+sudo /var/ossec/bin/agent-auth -m 192.168.100.149 -A "Agent-Name"
+sudo systemctl enable --now wazuh-agent
+sudo systemctl restart wazuh-agent
+```
+
+---
+
+
 
 ## Windows 11 Server (2025)
 
@@ -169,4 +180,17 @@ Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.1
 
 ```
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.1-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.100.149' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='W10-Pro'
+```
+
+
+```ad-important
+After running the commands for windows, run this:
+
+cd "C:\Program Files (x86)\ossec-agent\"
+.\agent-auth.exe -m 192.168.100.149 -A <Name_Of_Agent>
+Restart-Service WazuhSvc
+```
+
+```ad-note
+Firewall had to allow outbound for 1515/1514
 ```
