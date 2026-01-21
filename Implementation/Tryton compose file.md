@@ -63,19 +63,22 @@ services:
     depends_on:
       - server
 ```
-# Steps to install (documentation)
+# Steps to install (Documentation)
 
-The default port for PostgreSQL is 5432, so I changed it to that
+The default port for PostgreSQL is set to 5432, so It was  changed it to that.
 
-The firewall on windows 11 server was being stubborn. Its net connection was set to public, so the private rules werent working. I set the Net-Connection in powershell to private and added an inbound rule for SQL on port 5432
+The firewall on windows 11 server was being stubborn. Its net connection was set to public, so the private rules weren't working stopping a stable connection. I set the Net-Connection in powershell to private and added an inbound rule for SQL on port 5432
 
-Secondly, I was having some trouble connecting the tryton app to the sql, it was complaining about the `pg_hba.conf` file not having any allow-list items for the ip address 192.168.100.151 (tryton ubuntu), so I had to add this line to the bottom of it:
+Secondly, there was some trouble connecting the Tryton app to the sql, it was complaining about the `pg_hba.conf` file not having any allow-list items for the ip address 192.168.100.151 (tryton ubuntu), so I had to add this line to the bottom of it:
+
 
 `host    all    tryton    192.168.100.151/32    scram-sha-256`
 
-Then, the database wasnt initializing from the docker compose. This was because I was trying to connect to the database `trytondb` and not `tryton`. So I had to initialize both and set default passwords for both.
+Per post's documentation - The system view `pg_hba_file_rules` can be helpful for pre-testing changes to the `pg_hba.conf file.`
 
-After that, I `docker compose down -v` and `docker compose up -d`. Then I accessed the web portal. Default creds for the `trytondb` database is `admin:CH@ngeME_123`
+Additionally , the database wasn't initializing from the docker compose. This occurred  because I was trying to connect to the database `trytondb` and not `tryton`. So I had to initialize both and set default passwords for both.
+
+Lastly, I  ran `docker compose down -v` and `docker compose up -d`. following I accessed the web portal. Default creds for the `trytondb` database is `admin:CH@ngeME_123`.
 
 
 
