@@ -88,6 +88,12 @@ Tryton-Ubuntu:
 - User: Gabriel, Chuck
 
 
+ACCOUNTS:
+- `gabriel_soc@atlas.corp`
+- `chuck@atlas.corp`
+- `johnny@atlas.corp`
+- `chris@atlas.corp`
+
 >[!note] The keys will be stored in the user session on Windows 2025 Server separately for each user in a secure spot (TBD)
 
 
