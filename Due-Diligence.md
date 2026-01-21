@@ -24,8 +24,9 @@
 
 | App endpoint     | Host OS                              |
 | ---------------- | ------------------------------------ |
-| PostgreSQL       | Windows Server 2025                  |
+| PostgreSQL       | Windows Server 2022                  |
 | Wazuh            | Ubuntu 22.04 Server image (headless) |
 | Tryton           | Ubuntu 22.04 Server image (headless) |
 | User Environment | Windows 10 Pro                       |
 
+![Pasted image 20260120095237.png](app://c236b50c780f383db7ed4bb7a7a982061e28/Users/chuck.d/atlas_industrial/zz%20-%20Misc%20Img%20Folder/Pasted%20image%2020260120095237.png?1768943551937)
