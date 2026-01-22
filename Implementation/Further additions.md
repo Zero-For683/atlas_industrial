@@ -55,14 +55,20 @@ Windows 10:
 
 Tryton-Ubuntu:
 - `app01.atlas.corp`
-- `tryton.atlas.corp` (DNS record for app)
+- `tryton.corp.atlas.com` (DNS record for app)
 
 Wazuh-Ubuntu:
-- `siem01.atlas.corp`
-- `wazuh-dashboard.atlas.corp` (DNS record for app)
-- `wazuh-api.atlas.corp` (DNS record for app)
-- `wazuh-indexer.atlas.corp` (DNS record for app)
+- `siem01.corp.atlas.com`
+- `wazuh-dashboard.corp.atlas.com` (DNS record for app)
+- `wazuh-indexer.corp.atlas.com` (DNS record for app)
 
+![[Pasted image 20260121154457.png]]
+
+```ad-summary
+There is a DNS server on the DC. all of the service apps (tryton, vaultwarden, wazuh) resolve to the caddy server on `192.168.100.149`, which is then forwarded to the appropriate service. 
+
+Firewall rules need to allow 443, and DNS. The "preferred dns server" needs to be set to `192.168.100.148` for all machines. 
+```
 
 ---
 
@@ -89,7 +95,7 @@ Tryton-Ubuntu:
 
 
 ACCOUNTS:
-- `gabriel_soc@atlas.corp`
+- `gabriel@atlas.corp`
 - `chuck@atlas.corp`
 - `johnny@atlas.corp`
 - `chris@atlas.corp`
