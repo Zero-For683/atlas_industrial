@@ -26,6 +26,11 @@ WAZUH DASHBOARD USER:
 admin:c5GFHDSyPXfS%WB%2Fj^
 ```
 
+```
+WAZUH ADMIN TOKEN:
+TOKEN:"+t7rPrBhoozjmh/tLycwO5J0uLWguRhfzT9tWGuTocco9j2KXd4rpf+pCDsdU5ZBd"
+```
+
 
 ---
 
