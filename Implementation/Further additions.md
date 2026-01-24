@@ -29,15 +29,24 @@ We will separate access to who has what credentials so if one account/login gets
 
 Gabriel:
 - Wazuh stack (manager, dashboard, kibana, etc)
+- Windows 11 login
+- wazuh ubuntu key, passphrase, and admin/user passwords
+- windows 10 login
 
 Chuck:
-- PostgreSQL admin panel
+- PostgreSQL admin panel & trytondb creds
+- Windows 11 login
+- wazuh ubuntu key, passphrase, and admin/user passwords
 
 Johnny:
 - Domain admin (He's the AD guy)
+- Windows 11 login
+- tryton ubuntu key, passphrase, and admin/user passwords
+- windows 10 admin login
 
 Chris:
 - Tryton ERP (trytondb database credentials)
+- tryton ubuntu key, passphrase, and admin/user passwords
 
 
 ---
