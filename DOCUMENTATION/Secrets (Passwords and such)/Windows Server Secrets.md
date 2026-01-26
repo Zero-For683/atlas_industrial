@@ -17,3 +17,4 @@ Services PostgreSQL AD Account - q6t--PCusHFJZn$&
 
 Services Wazuh AD Account - $;gT,hMRSyf?H&<g
 
+Atlas-Admin Account - On6o[TQ]0}{02CZ?
