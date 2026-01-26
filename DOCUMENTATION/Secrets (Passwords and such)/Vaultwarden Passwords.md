@@ -6,4 +6,4 @@ Logins & emails
 
 `chuck@atlas.corp`:NeneELm&4A1Y%QEk5Hg8
 
-`chris@atlas.corp`:4@8z@CCt1NFmk*E#fv9q
+`chris@atlas.corp`:4@8z@CCt1NFmk*E#fv9qssh 
