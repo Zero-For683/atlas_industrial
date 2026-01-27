@@ -38,7 +38,7 @@ During Stage 7, the Atlas Industrial team transitioned from architectural design
 
 **Deployment Steps:**
 
-- Installed Windows Server 2025 on ==VLAN 30==
+- Installed Windows Server 2025 
     
 - Configured server with:
     
@@ -81,7 +81,7 @@ During Stage 7, the Atlas Industrial team transitioned from architectural design
 
 **Deployment Steps:**
 
-- Installed Ubuntu 22.04 on ==VLAN 20==
+- Installed Ubuntu 22.04 
     
 - Deployed Tryton using Docker Compose
     
@@ -124,7 +124,7 @@ During Stage 7, the Atlas Industrial team transitioned from architectural design
 
 **Deployment Steps:**
 
-- Installed Ubuntu 22.04 on ==VLAN 10==
+- Installed Ubuntu 22.04 
     
 - Deployed Wazuh using Docker Compose (single-node deployment)
     
